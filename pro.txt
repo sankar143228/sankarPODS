@@ -1,0 +1,78 @@
+actually in our MaxLife Insurance, we are creating an application to create the policies where the customer can take policies. 
+
+We are creating applications not only for MaxLife Insurance, even other vendors also  can take policies from MaxLife Insurance.
+
+For example, we are supporting as of now yes-Bank Limited and Axis Bank. Those guys also can take policies from our applications. 
+
+ we are having an application like M-Rake and M-Sales.
+
+We have upgraded that one and we have created M-Pro where all channel agents can take the policies.
+
+Here it will be most of the cases, there will be no involvement of customer directly.
+
+An agent will be guiding the customer and they can take the policies with the help of  agent. 
+
+ 
+coming to mpro application  there are six screens. 
+
+We will be taking basic details of the customer. 
+
+screen 1 is Customer Details
+
+In the first screen, we will be taking the basic information like mobile number, PANNumber,aadhar number and mobile number
+
+once all the fill the deatiles its moving to screen 2
+
+In our M-Pro, there will be different services in every screen.  In the second screen, there is a service called PAN DOB service.
+
+ previously they have given the basic details like PAN card, first name,last name and date of birth.  With that one, it will run a PAN DOB service. 
+
+It will match the details whether this guy is providing correct PAN card or not. 
+If PAN card details are matching with the name and date of birth, then it will throw
+a message that this guy is providing correct PAN card.  Otherwise, it will throw an error.  Based on that one, we will be asking documents 
+in the last screen. 
+
+Once this is done, he can give his basic address details in the screen to itself. 
+
+ Once he provided his basic address and his annual income, why he is taking policy like  what is the goal and what is the need of insurance, 
+why he is taking it. 
+If he is on life stage, whether he is single or married, if he provided the details, we 
+ will be running a service called PSM, product suitability matrix.  It will suggest few products.
+
+So agent can tell that these products are suitable to you. As per your given details, the customer can opt the policy from the suggested ones or 
+ he can opt different products also.  We will be having too many products.  He can select from the suggested products or different products also.
+
+Once he can take the product, he can choose the policy term, payment term, these details 
+ he can select and how much premium he needs to pay.  He will pay a yearly, semi-annual, monthly, this type of payment mode he can select and  
+he can continue. At the screen 2, once he selected the product details, at the top, after giving personal details, we will run Pandio service. 
+
+If he is able to select the product and all the details are correct, it will generate
+an illustration.  Otherwise, it will generate an error that you need to change this one, you need to change  this one.  Otherwise, 
+it will generate an illustration and a link will be sent to the customer. If it is successful, we will be going to screen 3. 
+
+all personal details will be asked and his bank details will also be  asked in the screen 3. 
+There are no major services which will run in screen 3. 
+
+ Only one service is there, basic service like IFC and MICR service is there. If you provide IFC and MICR number, 
+automatically the name and account branch will be pre-populated
+
+Once this is done, we will go to screen 4.  In screen 4, we will be asking few questions like whether he is a politically exposed person  
+or not or he is involving any criminal activities or not. All lifestyle questions will be asked. 
+ 
+on him or recently he has traveled to any abroad or not.  This type of questions will be there. 
+Once he will provide all these details, he can submit the page at screen 4. 
+Even in screen 4, they have included few health questions like diabetes, sugar, liver issues, heart attack issues, covid issues, 
+genetic issues, too many questions of health.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
