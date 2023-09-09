@@ -1,0 +1,342 @@
+Admin@Sankar MINGW64 ~/Agrim (main)
+$ git branch
+  POD1
+  POD2
+* main
+
+Admin@Sankar MINGW64 ~/Agrim (main)
+$ git branch POD3
+
+Admin@Sankar MINGW64 ~/Agrim (main)
+$ git checkout POD4
+error: pathspec 'POD4' did not match any file(s) known to git
+
+Admin@Sankar MINGW64 ~/Agrim (main)
+$ git checkout -b POD4
+Switched to a new branch 'POD4'
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git branch -d POD4
+error: Cannot delete branch 'POD4' checked out at 'C:/Users/Admin/Agrim'
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git branch -d POD3
+Deleted branch POD3 (was 6d97f73).
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git branch
+  POD1
+  POD2
+* POD4
+  main
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git add .
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git commit -a -m "sheets"
+[POD4 d283569] sheets
+ 17 files changed, 2557 insertions(+)
+ create mode 100644 20210906_162904.csv
+ create mode 100644 20210906_162904.html
+ create mode 100644 CustomScreenshots/screenshot_PassedScreenShot.png
+ create mode 100644 Intro.txt
+ create mode 100644 Testing.txt
+ create mode 100644 execution0.log.lck
+ create mode 100644 foctors.html
+ create mode 100644 index.html
+ create mode 100644 index.html.txt
+ create mode 100644 krishna.html
+ create mode 100644 normal.html
+ create mode 100644 operters.html
+ create mode 100644 pro.txt
+ create mode 100644 project in.txt
+ create mode 100644 project.txt
+ create mode 100644 protected.txt
+ create mode 100644 time table.txt
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git push origin POD4
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (18/18), 380.38 KiB | 12.68 MiB/s, done.
+Total 18 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+remote:
+remote: Create a pull request for 'POD4' on GitHub by visiting:
+remote:      https://github.com/sankar143228/Agrim/pull/new/POD4
+remote:
+To https://github.com/sankar143228/Agrim.git
+ * [new branch]      POD4 -> POD4
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git branch -r
+  origin/POD1
+  origin/POD2
+  origin/POD4
+  origin/main
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ ls
+ 10_Github_Commands_List.pdf                           Testing.txt
+ 11_What_is_Maven.pdf                                  execution.properties
+ 12.1_Jenkins_Tutorial.pdf                             execution.uuid
+ 12.2_Complete_Jenkins.pdf                             execution0.log
+ 1630924682357.png                                     execution0.log.lck
+ 1630924697441.png                                     foctors.html
+ 1630924711561.png                                     index.html
+ 20210906_160736.csv                                   index.html.txt
+ 20210906_160736.html                                  krishna.html
+ 20210906_162904.csv                                   normal.html
+ 20210906_162904.html                                  operters.html
+'7.2_Linux SHELLS.pdf'                                 ppp.txt
+ 8.1_Version_Control_system.pdf                        pro.txt
+'8.2_Centralized vs Distributed Version Control.pdf'  'project in.txt'
+ 9_Introduction_Git.pdf                                project.txt
+ CustomScreenshots/                                    protected.txt
+ Intro.txt                                             testCaseBinding
+ JUnit_Report.xml                                      texh.txt
+ README.md                                            'time table.txt'
+
+Admin@Sankar MINGW64 ~/Agrim (POD4)
+$ git checkout POD1
+Switched to branch 'POD1'
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ ls
+ Intro.txt      index.html       operters.html     protected.txt
+ README.md      index.html.txt   pro.txt          'time table.txt'
+ Testing.txt    krishna.html    'project in.txt'
+ foctors.html   normal.html      project.txt
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git tag
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git tag -a v0.0.9 -m "Phase1"
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git tag
+v0.0.9
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git push --tags
+Enumerating objects: 325, done.
+Counting objects: 100% (325/325), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (320/320), done.
+Writing objects: 100% (324/324), 644.40 MiB | 4.29 MiB/s, done.
+Total 324 (delta 142), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (142/142), done.
+remote: warning: File office 2010/PowerPoint.en-us/PptLR.cab is 67.69 MB; this i
+s larger than GitHub's recommended maximum file size of 50.00 MB
+remote: error: Trace: 38b0238c1a61c628a60cbba98c16d4a5fcc3029d9980025ab5edfd7b64
+0c487d
+remote: error: See https://gh.io/lfs for more information.
+remote: error: File office 2010/ProPlus.WW/ProPsWW2.cab is 160.14 MB; this excee
+ds GitHub's file size limit of 100.00 MB
+remote: error: File office 2010/ProPlus.WW/ProPsWW.cab is 170.87 MB; this exceed
+s GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File S
+torage - https://git-lfs.github.com.
+To https://github.com/sankar143228/Agrim.git
+ ! [remote rejected] v0.0.9 -> v0.0.9 (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/sankar143228/Agrim.git'
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git branch POD6
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ pwd
+/c/Users/Admin/Agrim
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git status
+On branch POD1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    foctors.html
+        deleted:    index.html
+        deleted:    krishna.html
+        deleted:    normal.html
+        deleted:    operters.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git add .
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git commit "updated files"
+error: pathspec 'updated files' did not match any file(s) known to git
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git commit -a -m "updatedfiles"
+[POD1 a08d26f] updatedfiles
+ 5 files changed, 87 deletions(-)
+ delete mode 100644 foctors.html
+ delete mode 100644 index.html
+ delete mode 100644 krishna.html
+ delete mode 100644 normal.html
+ delete mode 100644 operters.html
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git push
+fatal: The current branch POD1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin POD1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git push origin POD1
+Enumerating objects: 326, done.
+Counting objects: 100% (326/326), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (321/321), done.
+Writing objects: 100% (325/325), 644.41 MiB | 4.57 MiB/s, done.
+Total 325 (delta 146), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (146/146), done.
+remote: warning: File office 2010/PowerPoint.en-us/PptLR.cab is 67.69 MB; this i
+s larger than GitHub's recommended maximum file size of 50.00 MB
+remote: error: Trace: 1ff1c0da5ce069cf8a18b782fa138fc4d181f80cdd065f120210c1f926
+24772e
+remote: error: See https://gh.io/lfs for more information.
+remote: error: File office 2010/ProPlus.WW/ProPsWW.cab is 170.87 MB; this exceed
+s GitHub's file size limit of 100.00 MB
+remote: error: File office 2010/ProPlus.WW/ProPsWW2.cab is 160.14 MB; this excee
+ds GitHub's file size limit of 100.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File S
+torage - https://git-lfs.github.com.
+To https://github.com/sankar143228/Agrim.git
+ ! [remote rejected] POD1 -> POD1 (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/sankar143228/Agrim.git'
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git reflog
+a08d26f (HEAD -> POD1) HEAD@{0}: commit: updatedfiles
+f7a6ff2 (tag: v0.0.9, POD6) HEAD@{1}: checkout: moving from POD4 to POD1
+d283569 (origin/POD4, POD4) HEAD@{2}: commit: sheets
+6d97f73 (main) HEAD@{3}: checkout: moving from main to POD4
+6d97f73 (main) HEAD@{4}: reset: moving to HEAD
+6d97f73 (main) HEAD@{5}: reset: moving to 6d97f73
+c177aad HEAD@{6}: merge POD2: Merge made by the 'ort' strategy.
+f7a6ff2 (tag: v0.0.9, POD6) HEAD@{7}: merge POD1: Fast-forward
+469f961 (origin/main) HEAD@{8}: checkout: moving from POD2 to main
+9001044 (origin/POD2, POD2) HEAD@{9}: checkout: moving from POD1 to POD2
+f7a6ff2 (tag: v0.0.9, POD6) HEAD@{10}: checkout: moving from POD2 to POD1
+9001044 (origin/POD2, POD2) HEAD@{11}: commit: updated mobile reports
+6d97f73 (main) HEAD@{12}: commit: updated png files
+dbd501e HEAD@{13}: commit: updated png files
+43344f4 HEAD@{14}: commit: updated pdf files
+469f961 (origin/main) HEAD@{15}: checkout: moving from POD1 to POD2
+f7a6ff2 (tag: v0.0.9, POD6) HEAD@{16}: reset: moving to HEAD~1
+f40e5c9 HEAD@{17}: reset: moving to HEAD
+f40e5c9 HEAD@{18}: commit: files
+f7a6ff2 (tag: v0.0.9, POD6) HEAD@{19}: reset: moving to HEAD
+f7a6ff2 (tag: v0.0.9, POD6) HEAD@{20}: commit: updated
+1fa88b3 HEAD@{21}: checkout: moving from POD2 to POD1
+469f961 (origin/main) HEAD@{22}: checkout: moving from POD1 to POD2
+1fa88b3 HEAD@{23}: commit: updated sheets
+e57e7df HEAD@{24}: commit: latestcode
+284bb1a (origin/POD1) HEAD@{25}: checkout: moving from POD2 to POD1
+469f961 (origin/main) HEAD@{26}: checkout: moving from main to POD2
+469f961 (origin/main) HEAD@{27}: checkout: moving from POD1 to main
+284bb1a (origin/POD1) HEAD@{28}: checkout: moving from POD1 to POD1
+284bb1a (origin/POD1) HEAD@{29}: commit: updated sheets
+469f961 (origin/main) HEAD@{30}: checkout: moving from main to POD1
+469f961 (origin/main) HEAD@{31}: commit (initial): sankar1st
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git log
+commit a08d26ffd45f6f621157e9fb6972c460787b2da2 (HEAD -> POD1)
+Author: shankar <sankar.143.228@gmail.com>
+Date:   Tue Sep 5 20:04:07 2023 +0530
+
+    updatedfiles
+
+commit f7a6ff2897d075cdb3009e45ea3a264f4ab8219d (tag: v0.0.9, POD6)
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 15:27:43 2023 +0530
+
+    updated
+
+commit 1fa88b34d94279b0d3b06beba7d307275d85670a
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 15:18:24 2023 +0530
+
+    updated sheets
+
+commit e57e7df413134d28801321f69791975b34a66b60
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 14:37:11 2023 +0530
+
+    latestcode
+
+commit 284bb1aa1d4e970ca61f74e6323e29eb6b5721dd (origin/POD1)
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 13:15:33 2023 +0530
+
+    updated sheets
+
+commit 469f96106fb85ad8a7d39635fd9fb9178b2cb790 (origin/main)
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 12:55:18 2023 +0530
+
+    sankar1st
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git reflog POD1
+a08d26f (HEAD -> POD1) POD1@{0}: commit: updatedfiles
+f7a6ff2 (tag: v0.0.9, POD6) POD1@{1}: reset: moving to HEAD~1
+f40e5c9 POD1@{2}: commit: files
+f7a6ff2 (tag: v0.0.9, POD6) POD1@{3}: commit: updated
+1fa88b3 POD1@{4}: commit: updated sheets
+e57e7df POD1@{5}: commit: latestcode
+284bb1a (origin/POD1) POD1@{6}: commit: updated sheets
+469f961 (origin/main) POD1@{7}: branch: Created from main
+
+Admin@Sankar MINGW64 ~/Agrim (POD1)
+$ git log POD1
+commit a08d26ffd45f6f621157e9fb6972c460787b2da2 (HEAD -> POD1)
+Author: shankar <sankar.143.228@gmail.com>
+Date:   Tue Sep 5 20:04:07 2023 +0530
+
+    updatedfiles
+
+commit f7a6ff2897d075cdb3009e45ea3a264f4ab8219d (tag: v0.0.9, POD6)
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 15:27:43 2023 +0530
+
+    updated
+
+commit 1fa88b34d94279b0d3b06beba7d307275d85670a
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 15:18:24 2023 +0530
+
+    updated sheets
+
+commit e57e7df413134d28801321f69791975b34a66b60
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 14:37:11 2023 +0530
+
+    latestcode
+
+commit 284bb1aa1d4e970ca61f74e6323e29eb6b5721dd (origin/POD1)
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 13:15:33 2023 +0530
+
+    updated sheets
+
+commit 469f96106fb85ad8a7d39635fd9fb9178b2cb790 (origin/main)
+Author: sankar <sankar.143.228@gmail.com>
+Date:   Sat Sep 2 12:55:18 2023 +0530
+
+    sankar1st
+
